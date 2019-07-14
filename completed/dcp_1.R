@@ -11,7 +11,7 @@
 a <- c(10, 15, 3, 7)
 k <- 17
 
-
+### brute force
 # test <- F
 # for (i in a) {
 #   if(test == T) {
@@ -29,7 +29,8 @@ k <- 17
 #   }
 # }
 
-# a <- round(randu[1]*100)$x
-# k <- round(runif(1)*100)
+a <- round(runif(1000)*100)
+k <- round(runif(1)*3*length(a))
 
+### elegant, but slow for large a (O(N^2))
 k %in% colSums(combn(a, 2))
