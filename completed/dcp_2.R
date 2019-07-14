@@ -14,3 +14,26 @@
 # 
 # 
 
+input <- c(1,2,3,4,5)
+# input <- c(3, 2, 1)
+output <- c()
+
+# with division
+for (i in input) {
+output <- c(output, prod(input)/i)
+}
+print(output)
+
+# without division
+for (i in input) {
+  o <- 1
+  for (j in input) {
+    if (j == i) {
+      next()
+    }
+    o <- o * j
+  }
+
+  output <- c(output, o)
+}
+print(output)
