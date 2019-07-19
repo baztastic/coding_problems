@@ -22,7 +22,7 @@
 # 
 # 
 # 1. Given the tables above, select the top 3 departments by the highest percentage of 
-# employees making over 100K in salary and have at least 10 employees.
+# employees making over 100K in salary and have =QUERY(at least 10 employees.
 # 
 # Example output:
 #   
