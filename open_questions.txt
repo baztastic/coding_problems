@@ -3,3 +3,5 @@ Open questions
 * Constructors
 * Serialize
 * XOR linked list
+* Binary/unival trees
+* O(N) notation calculation
